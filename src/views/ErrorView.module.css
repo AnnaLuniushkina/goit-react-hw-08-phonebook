@@ -1,0 +1,28 @@
+.titleError {
+    text-align: center;
+}
+
+.errorButton {
+    display: block;
+    margin: 20px auto 0px auto;
+    width: 200px;
+    height: 60px;
+    
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(151, 68, 230);
+    box-shadow: 7px 4px 14px rgba(49, 21, 4, 0.5);
+    
+    cursor: pointer;
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 1.1;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+.errorButton:hover {
+    color: aquamarine;
+}
