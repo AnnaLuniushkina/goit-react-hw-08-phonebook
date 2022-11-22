@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+
+    }
+}
+        
+.addContactsPage {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.addContactsTitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.filter {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .filterTitle {
+        margin-bottom: 34px;
+        font-size: 26px;
+    }
+}
+
+.loading {
+    text-align: center;
+}

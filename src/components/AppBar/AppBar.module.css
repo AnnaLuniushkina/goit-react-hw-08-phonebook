@@ -1,0 +1,35 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 10px 8px;
+
+    max-width: 100%;
+    height: 50px;
+
+    background-color: rgb(151, 68, 230);
+    border-radius: 20px;
+    box-shadow: 7px 4px 14px rgba(49, 21, 4, 0.5);
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.1;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        /* margin-bottom: 100px; */
+        padding: 10px 50px;
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .navigation {
+        padding: 10px 50px;
+        font-size: 28px;
+    }
+} 

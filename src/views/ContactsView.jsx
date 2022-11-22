@@ -7,6 +7,8 @@ import ContactForm from "components/ContactForm/ContactForm";
 import ContactList from "components/ContactList/ContactList";
 import FilterContact from "components/FilterContact/FilterContact";
 
+import s from "./ContactsView.module.css";
+
 export default function ContactsView() {
     const dispatch = useDispatch();
     const isLoadingContacts = useSelector(getLoading);
@@ -16,19 +18,19 @@ export default function ContactsView() {
     }, [dispatch]);
 
     return (
-        <>
-            <div>
-                <h2>Add new contact</h2>
+        <div className={s.container}>
+            <div className={s.addContactsPage}>
+                <h2 className={s.addContactsTitle}>Add new contact</h2>
                 <ContactForm />
             </div>
 
-            {isLoadingContacts && <h1>Loading</h1>}
+            {isLoadingContacts && <h1 className={s.loading}>Loading...</h1>}
             
-            <div>
-                <h3>Find contact by name</h3>
+            <div className={s.filter}>
+                <h3 className={s.filterTitle}>Find contact by name</h3>
                 <FilterContact />
                 <ContactList />
             </div>
-        </>
+        </div>
     );
 }

@@ -1,0 +1,30 @@
+.authNav {
+    
+}
+
+.authLink {
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.authLink:hover {
+    color: aquamarine;
+    border: 2px solid aquamarine;
+}
+
+.authLink:first-child {
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .authLink:first-child {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .authLink:first-child {
+        margin-right: 35px;
+    }
+}

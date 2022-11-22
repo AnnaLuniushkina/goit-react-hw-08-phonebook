@@ -1,0 +1,16 @@
+.userNavigation {
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    font-size: 18px;
+}
+
+.userNavigation:hover {
+    color: aquamarine;
+    border: 2px solid aquamarine;
+}
+
+.userNavigation:first-child {
+    margin-right: 5px;
+}

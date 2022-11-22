@@ -1,0 +1,37 @@
+.userMenu {
+display: flex;
+align-items: center;
+width: 160px;
+}
+
+.avatar {
+margin-right: 10px;
+border-radius: 30px;
+}
+
+.userName {
+font-size: 15px;
+margin-right: 5px;
+}
+
+.logOutButton {
+width: 50px;
+
+border: 1px solid black;
+border-radius: 20px;
+background-color: rgb(151, 68, 230);
+
+cursor: pointer;
+font-family: 'Kalam';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 1.1;
+align-items: center;
+letter-spacing: 0.04em;
+}
+
+.logOutButton:hover {
+    color: aquamarine;
+    border: 1px solid aquamarine;
+}

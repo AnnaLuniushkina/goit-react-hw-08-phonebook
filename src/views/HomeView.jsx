@@ -1,6 +1,8 @@
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import authSelectors from "redux/auth/auth-selectors";
+import s from "./HomeView.module.css";
+
 
 export default function HomeView() { 
     const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
@@ -10,20 +12,23 @@ export default function HomeView() {
         <main>
             {isLoggedIn ? (
                 <>
-                    <h2>Welcome, {name}!</h2>
+                    <h2 className={s.title}>Welcome, {name}!</h2>
                     <NavLink to="/contacts">
-                        <button type="button">My contacts</button>
+                        <button className={s.authButtonContacts} type="button">My contacts</button>
                     </NavLink>
                 </>
             ) : (
                 <>
-                        <h2>Welcome to Phone book</h2>
-                        {/* <NavLink to="/register">
-                            <button type="button">Register</button>
-                        </NavLink>
+                        <h1 className={s.titleHome}>Welcome to your Phone book</h1>
+
+                        <div className={s.authButtonSection}>
+                        <NavLink to="/register">
+                            <button className={s.authButton}type="button">Registration</button>
+                            </NavLink>
                         <NavLink to="/login">
-                            <button type="button">LogIn</button>
-                        </NavLink> */}
+                            <button className={s.authButton }type="button">LogIn</button>
+                        </NavLink>
+                        </div>
                     </>
             )}
         </main>

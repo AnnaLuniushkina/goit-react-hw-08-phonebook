@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 
-import authOperations from '../redux/auth/auth-operations'
+import authOperations from '../redux/auth/auth-operations';
+import s from './RegisterView.module.css';
+
+
 
 export default function RegisterView() {
     const dispatch = useDispatch();
@@ -31,13 +34,14 @@ export default function RegisterView() {
     };
 
     return (
-        <div>
-            <h1>Сторінка реєстрації</h1>
+        <div className={s.registrationBlock}>
+            <h2 className={s.registrationTitle}>Registration</h2>
 
-            <form onSubmit={handleSubmit} autoComplete="on">
-                <label>
-                    Ім'я
+            <form onSubmit={handleSubmit} autoComplete="on" className={s.registrationForm}>
+                <label className={s.registrationLabel}>
+                    Name
                     <input
+                        className={s.registrationInput}
                         type='text'
                         name='name'
                         value={name}
@@ -45,9 +49,10 @@ export default function RegisterView() {
                     />
                 </label>
 
-                <label>
-                    Почта
+                <label className={s.registrationLabel}>
+                    Email
                     <input
+                        className={s.registrationInput}
                         type='email'
                         name='email'
                         value={email}
@@ -55,9 +60,10 @@ export default function RegisterView() {
                     />
                 </label>
 
-                <label>
-                    Пароль
+                <label className={s.registrationLabel}>
+                    Password
                     <input
+                        className={s.registrationInput}
                         type='password'
                         name='password'
                         value={password}
@@ -65,7 +71,7 @@ export default function RegisterView() {
                     />
                 </label>
 
-                <button type="submit">Зареєструватися</button>
+                <button className={s.registrationButton} type="submit">Sign up</button>
             </form>
         </div>
     )
